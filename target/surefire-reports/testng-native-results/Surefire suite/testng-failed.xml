@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="TestNGProgram.NewTest">
+        <methods>
+          <include name="failedTest"/>
+        </methods>
+      </class> <!-- TestNGProgram.NewTest -->
+      <class name="TestNGProgram.ParallelTest">
+        <methods>
+          <include name="ChromeTest"/>
+          <include name="EdgeTest"/>
+        </methods>
+      </class> <!-- TestNGProgram.ParallelTest -->
+      <class name="TestNGProgram.CrossBrowseTest">
+        <methods>
+          <include name="check_Title"/>
+          <include name="beforeClass"/>
+          <include name="login"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestNGProgram.CrossBrowseTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

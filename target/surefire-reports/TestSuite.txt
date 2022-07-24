@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 30, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 28.886 s <<< FAILURE! - in TestSuite
+beforeClass(TestNGProgram.CrossBrowseTest)  Time elapsed: 0.015 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+
+
+failedTest(TestNGProgram.NewTest)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at TestNGProgram.NewTest.failedTest(NewTest.java:27)
+
+ChromeTest(TestNGProgram.ParallelTest)  Time elapsed: 3.794 s  <<< FAILURE!
+org.testng.TestException: 
+
+Method ParallelTest.ChromeTest()[pri:0, instance:TestNGProgram.ParallelTest@27ff5d15] should have thrown an exception of type class org.testng.internal.thread.ThreadTimeoutException
+
+EdgeTest(TestNGProgram.ParallelTest)  Time elapsed: 0.012 s  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method TestNGProgram.ParallelTest.EdgeTest() didn't finish within the time-out 5000
+
